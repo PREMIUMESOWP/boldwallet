@@ -6,7 +6,7 @@ $json = "https://bwalletpay.com/processor/verify";
 $masterkey = "";
 $refdy = $json."?masterkey=".$masterkey."&refid=".$refid;
       
-      $url = $json+""+$refdy;
+      $url = $json."".$refdy;
        $jsonfile =  file_get_contents($url);
        $var = json_decode($jsonfile);
 	   
